@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-const giphy_secret_key = process.env.REACT_APP_GIPHY_KEY
+import data from './file/file.js'
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <img src={data.album.images[0].url} width="300" height="300" className="rotate" />
+      </div>
+      <div>
+        <h2>{data.name}</h2>
+        <h3>{data.album.name}</h3>
+        <p>{data.artists[0].name}</p>
+	<button><a href={data.album.artists[0].external_urls.spotify}>select</a></button>
+      </div>
     </div>
   );
 }
