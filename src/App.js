@@ -1,5 +1,6 @@
 import './App.css';
 import data from './file/file.js'
+import {AlbumImage,AlbumDesc, AlbumName, ButtonUrl} from './komponen/index.js';
 
 function App() {
   return (
