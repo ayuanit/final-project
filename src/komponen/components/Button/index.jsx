@@ -39,7 +39,7 @@ Button.propTypes = {
   children: PropTypes.node.isRequired,
   type: PropTypes.string,
   className: PropTypes.string,
-  variant: PropTypes.oneOf(['primary', 'secondary']),
+  variant: PropTypes.oneOf(['primary', 'secondary','text']),
   onClick: PropTypes.func,
   href: PropTypes.string,
 }
